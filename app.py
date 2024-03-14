@@ -14,6 +14,7 @@ stores = [
     }
 ]
 
+
 @app.get("/store")
 def get_stores():
     return {"stores": stores}
