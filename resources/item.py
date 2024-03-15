@@ -47,6 +47,7 @@ class ItemList(MethodView):
     def get(self):
         return {"items": list(items.values())}
 
+
     def post(self):
         item_data = request.get_json()
         print(item_data)
